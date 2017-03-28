@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OneViewController">
+            <connections>
+                <outlet property="tableView" destination="cmr-fC-aAP" id="4h5-bb-Pdp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="控制器1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Po-1s-iku">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cmr-fC-aAP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="czI-yw-CcT"/>
+                        <outlet property="delegate" destination="-1" id="nLT-RU-1kd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0Po-1s-iku" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3cG-1x-YOG"/>
+                <constraint firstItem="0Po-1s-iku" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="47P-KE-PfO"/>
+                <constraint firstAttribute="bottom" secondItem="cmr-fC-aAP" secondAttribute="bottom" id="55O-oj-maM"/>
+                <constraint firstItem="cmr-fC-aAP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="D8I-XY-VRw"/>
+                <constraint firstItem="cmr-fC-aAP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GGW-cx-xLa"/>
+                <constraint firstAttribute="bottom" secondItem="0Po-1s-iku" secondAttribute="bottom" id="IWq-lD-ZLt"/>
+                <constraint firstAttribute="trailing" secondItem="0Po-1s-iku" secondAttribute="trailing" id="ORT-W0-Fbz"/>
+                <constraint firstAttribute="trailing" secondItem="cmr-fC-aAP" secondAttribute="trailing" id="tTG-5y-0ap"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
